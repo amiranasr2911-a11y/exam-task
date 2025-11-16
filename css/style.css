@@ -760,3 +760,392 @@ background-color: white;
     border:3px solid #F3F4F6;
     padding: 20px;
 }
+#contact {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.circle-big {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background-color: #f5f2ff; 
+    right: -150px;
+    top: -130px;
+    z-index: 0;
+}
+
+#contact {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.circle-top-big {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: #f5f2ff;
+    top: -130px;
+    right: -200px;
+    z-index: 0;
+}
+
+
+.circle-top-small {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 6px solid #dcd4ff;
+    top: 90px;
+    right: 40px;
+    z-index: 0;
+}
+
+.circle-bottom-big {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: #f5f2ff;
+    bottom: -200px;
+    left: -200px;
+    z-index: 0;
+}
+
+
+.circle-bottom-small {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 6px solid #dcd4ff;
+    bottom: 40px;
+    left: 40px;
+    z-index: 0;
+}
+.footer {
+    background: #4A0F8E; 
+    padding: 40px 0;
+    color: white;
+}
+
+.footer-logo {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.footer-copy {
+    margin: 0;
+}
+
+.footer-line {
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    margin: 25px 0;
+}
+
+.footer-made {
+    color: #d9c7ed;
+    font-size: 15px;
+}
+
+
+
+.footer-icons .icon-box {
+    background: rgba(255,255,255,0.08);
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+
+.footer-icons .icon-box:hover {
+    background: #CEBCDF;   
+    transform: scale(1.15);   
+    color: #4A0F8E;  
+}
+
+.mb-20{
+    margin-bottom: 80px;
+}
+.mega-dropdown .dropdown-menu {
+    position: absolute !important;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    padding: 40px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+     margin-right: 100px;
+
+    overflow: visible !important;
+}
+
+.mega-dropdown {
+    position: static !important;
+}
+
+.mega-menu {
+  background: #fff;
+  border-radius: 12px;
+}
+
+.mega-menu h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+.feature-item {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.feature-item:hover {
+  background-color: #F9FAFB;
+}
+
+.mega-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background: #ccc; 
+  margin-right: 12px;
+  object-fit: cover;
+}
+
+.mega-links li {
+  padding: 6px 0;
+}
+
+.mega-links li a {
+  color: #444;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.mega-links li a:hover {
+  color: #7C3AED;
+}
+
+.location-card {
+  padding: 18px;
+  border-radius: 14px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+.location-card h6 {
+  font-size: 17px;
+  margin-bottom: 3px;
+}
+
+.location-card small {
+  opacity: 0.9;
+}
+
+.location-card:hover {
+  transform: translateX(5px);
+  opacity: 0.92;
+}
+
+.loc1 { background-image: url(''); }
+.loc2 { background-image: url(''); }
+.loc3 { background-image: url(''); }
+
+.resource-card {
+  padding: 18px;
+  border-radius: 12px;
+  background: #F9FAFB;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.resource-card:hover {
+  transform: translateX(5px);
+}
+
+.resource-card.green h6 { color: #059669; }
+.resource-card.purple h6 { color: #7C3AED; }
+.resource-card.blue h6 { color: #2563EB; }
+
+.mega-dropdown .dropdown-menu.show {
+  display: block;
+}
+.location-card {
+  position: relative;
+  width: 100%;
+  min-height: 130px; 
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: 0.3s;
+  background-size: cover;
+  background-position: center;
+}
+
+.location-card:hover {
+  transform: translateX(5px);
+  opacity: .95;
+}
+
+.location-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35); 
+  z-index: 1;
+}
+
+.location-card h6,
+.location-card small {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+.loc1 {
+  background-image:linear-gradient(rgb(69, 27, 94 ,0.5), rgb(69, 27, 94 ,0.5)), url("../img/new-york.jpeg");
+}
+
+.loc2 {
+  background-image:linear-gradient(rgb(69, 27, 94 ,0.5), rgb(69, 27, 94 ,0.5)), url("../img/los-angeles.jpeg");
+}
+
+.loc3 {
+  background-image:linear-gradient(rgb(69, 27, 94 ,0.5), rgb(69, 27, 94 ,0.5)), url("../img/miami.jpeg");
+}
+
+
+
+.mega-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.resource-card {
+  position: relative;
+  padding: 20px 20px 40px 20px; 
+  border-radius: 12px;
+  background: #F9FAFB;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.resource-card h6 {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+
+.resource-card small {
+  color: #4B5563;
+  font-size: 14px;
+  line-height: 1.4;
+  display: block;
+  margin-bottom: 0;
+}
+
+.resource-card::after {
+  content: "→";
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  font-size: 20px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.resource-card.green h6,
+.resource-card.green::after {
+  color: #059669;
+}
+
+.resource-card.purple h6,
+.resource-card.purple::after {
+  color: #7C3AED;
+}
+
+.resource-card.blue h6,
+.resource-card.blue::after {
+  color: #2563EB;
+}
+
+.resource-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.resource-card:hover h6 {
+  color: #000; 
+}
+
+.resource-card:hover::after {
+  transform: translateX(5px) scale(1.4);
+  color: #000; /* السهم يتحول للون أسود */
+}
+/* الدواير خلف الكروت */
+.resource-card::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  opacity: 0.1;
+  top: -20px;
+  right: -20px;  /* ممكن تغير يمين أو يسار حسب ما تحب */
+  z-index: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* ألوان الدواير حسب النوع */
+.resource-card.green::before {
+  background-color: #059669; /* أخضر */
+}
+
+.resource-card.purple::before {
+  background-color: #7C3AED; /* بنفسجي */
+}
+
+.resource-card.blue::before {
+  background-color: #2563EB; /* أزرق */
+}
+
+/* للتأكد أن النص فوق الدائرة */
+.resource-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* عند الـ hover تخفي الدائرة أو تقلل شفافيتها */
+.resource-card:hover::before {
+  opacity: 0.05;
+}
