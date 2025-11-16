@@ -7,7 +7,9 @@ input:focus ,select:focus {
   outline: none !important ;
    box-shadow: none !important;
 }
-
+body{
+    font-family: exo;
+}
 .my-nav span{
 font-family:exo ;
 font-size:24px ;
@@ -49,7 +51,7 @@ div .parent{
     background-color: white;
 }
 
-.fa-solid.fa-location-dot{
+.location2{
   position: absolute;
   bottom :16px;
   left: 3px;
@@ -583,28 +585,178 @@ transition: all 0.3s ease;
 transition: all 0.3s ease;
 
 }
-.call:hover{
+.email-card:hover{
     border-color:#9B1CFC;
     transform: translateY(-8px);
 }
-.location3{
- background-color:#9B1CFC;
+.email-card{
+    border:2px solid #F6F4FF;
+    border-radius: 8px;
+    padding: 20px;
+      transition: all 0.3s ease;
+
+}
+.email-card:hover .email {
+  transform: scale(1.15);
+}
+.location5{
+  background-image: linear-gradient(#E65ED1,#F9933C);
   padding: 20px 15px;
   border-radius: 8px;
-  font-size: 16px;
   color:white;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 55px;
   height: 55px;
   font-size: 20px;
   margin-bottom: 15px;
-transition: all 0.3s ease;
-
+  transition: all 0.3s ease;
 }
-.call:hover{
+
+.location-card3{
+    border:2px solid #F6F4FF;
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.location-card3:hover{
     border-color:#E86BBC;
     transform: translateY(-8px);
+}
+.location-card3:hover .location5{
+  transform: scale(1.15);
+}
+.chat{
+background-color: #574DFB; 
+ padding: 20px 15px;
+  border-radius: 8px;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.chat-card{
+    border:2px solid #F6F4FF;
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.chat-card:hover{
+    border-color:#574DFB;
+    transform: translateY(-8px);
+}
+.chat-card:hover .chat {
+  transform: scale(1.15);
+}
+.bg-f{
+    background-color:#F6F7F9;
+}
+.adderss{
+background-color: white; 
+ padding: 20px 15px;
+  border-radius: 8px;
+  color:#574DFB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  margin-right: 15px;
+}
+.adrees-info{
+    line-height: 1px;
+    margin-bottom: 10px;
+}
+.adress{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: exo;
+
+}
+.address-caption{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: exo;
+    color: oklch(0.446 0.03 256.802);
+}
+.Contact-info{
+font-size: 24px;
+    font-weight: 700;
+    font-family: exo;
+}
+.phone2{
+background-color: white; 
+ padding: 20px 15px;
+  border-radius: 8px;
+  color:#9810FA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  margin-right: 15px;
+}
+.mail{
+background-color: white; 
+ padding: 20px 15px;
+  border-radius: 8px;
+  color:#E60076;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  margin-right: 15px;
+}
+.clock{
+    background-color: white; 
+ padding: 20px 15px;
+  border-radius: 8px;
+  color:#4F39F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  margin-right: 15px;
+}
+.bg-bk{
+    background-image: linear-gradient(#8C1BFC,#9612FA);
+}
+.social{
+    background-color: #A943FC; 
+ padding: 20px 15px;
+  border-radius: 8px;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  margin-right: 15px;
+    transition: all 0.3s ease;
+
+}
+.social:hover{
+     transform: scale(1.15);
+     background-color: #B45CFC;
+
+}
+.form{
+    border:3px solid #F3F4F6;
+    padding: 20px;
 }
