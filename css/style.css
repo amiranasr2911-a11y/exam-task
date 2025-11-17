@@ -33,9 +33,10 @@ font-weight:600 ;
 }
 
 .caption h1{
+    margin-top: 20px;
     font-family:exo ;
-font-size:60px ;
-font-weight:700 ;
+font-size:50px ;
+font-weight:600 ;
 }
 .caption .my-p{
     color: oklch(0.928 0.006 264.531);
@@ -44,11 +45,26 @@ font-size:20px ;
 font-weight:400 ;
 
 }
-.w-60{
-    width: 60%;
+.section1 {
+  display: block !important;        
+  height: auto !important;         
+  padding-bottom: 120px !important; 
 }
-div .parent{
-    background-color: white;
+
+.search-wrapper {
+  margin-top: 30px !important;      /* يبعد الفورم عن الكابشن */
+}
+
+#home .container.mt-4 {
+  margin-top: 50px !important;      /* يبعد الأرقام تحت */
+}
+
+.search-wrapper {
+  width: 75%;
+  margin: auto;
+}
+.w-60{
+    width: 100%;
 }
 
 .location2{
@@ -67,7 +83,6 @@ div .parent{
     font-size: 16px;
     font-weight:400 ;
     font-family:exo ;
-    color: #99A1AF;
 }
 .location2{
      font-size: 16px;
@@ -1050,102 +1065,138 @@ background-color: white;
 }
 .resource-card {
   position: relative;
-  padding: 20px 20px 40px 20px; 
+  background-color: #fff;
+  border: 1px solid #c0bebe;
   border-radius: 12px;
-  background: #F9FAFB;
+  padding: 20px;
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
+  transition: border-color 0.3s ease;
+  margin-bottom: 20px;
+  overflow: hidden; 
 }
-
-.resource-card h6 {
-  font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 8px;
-  transition: color 0.3s ease;
-  display: inline-block;
-}
-
-.resource-card small {
-  color: #4B5563;
-  font-size: 14px;
-  line-height: 1.4;
-  display: block;
-  margin-bottom: 0;
-}
-
-.resource-card::after {
-  content: "→";
+.resource-card .circle {
   position: absolute;
-  bottom: 15px;
-  left: 20px;
-  font-size: 20px;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.resource-card.green h6,
-.resource-card.green::after {
-  color: #059669;
-}
-
-.resource-card.purple h6,
-.resource-card.purple::after {
-  color: #7C3AED;
-}
-
-.resource-card.blue h6,
-.resource-card.blue::after {
-  color: #2563EB;
-}
-
-.resource-card:hover {
-  transform: translateX(5px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-.resource-card:hover h6 {
-  color: #000; 
-}
-
-.resource-card:hover::after {
-  transform: translateX(5px) scale(1.4);
-  color: #000; /* السهم يتحول للون أسود */
-}
-/* الدواير خلف الكروت */
-.resource-card::before {
-  content: "";
-  position: absolute;
-  width: 80px;
-  height: 80px;
+  width: 50px;      
+  height: 50px;
   border-radius: 50%;
-  opacity: 0.1;
-  top: -20px;
-  right: -20px;  /* ممكن تغير يمين أو يسار حسب ما تحب */
+  top: -20px;       
+  right: -10px;
   z-index: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
 }
 
-/* ألوان الدواير حسب النوع */
-.resource-card.green::before {
-  background-color: #059669; /* أخضر */
+.resource-card.blue .circle {
+  background-color: #EDE9FE; 
 }
 
-.resource-card.purple::before {
-  background-color: #7C3AED; /* بنفسجي */
+.resource-card.green .circle {
+  background-color: #DBFCE7; 
 }
 
-.resource-card.blue::before {
-  background-color: #2563EB; /* أزرق */
+.resource-card.purple .circle {
+  background-color: #F3E8FF; 
 }
 
-/* للتأكد أن النص فوق الدائرة */
-.resource-card > * {
+.resource-card .d-flex,
+.resource-card small,
+.resource-card .learn-more {
   position: relative;
   z-index: 1;
 }
 
-/* عند الـ hover تخفي الدائرة أو تقلل شفافيتها */
-.resource-card:hover::before {
-  opacity: 0.05;
+.resource-card h6.card-title {
+  color: #000; 
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.resource-card .learn-more {
+  color: #999;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin-left: 10px;
+}
+
+.resource-card.green:hover {
+  border-color: #28a745; 
+}
+
+.resource-card.purple:hover {
+  border-color: #6f42c1; 
+}
+
+.resource-card.blue:hover {
+  border-color: #007bff; 
+}
+
+.resource-card.green .learn-more {
+  color: #28a745;
+}
+.resource-card.purple .learn-more {
+  color: #6f42c1;
+}
+.resource-card.blue .learn-more {
+  color: #007bff;
+}
+.resource-card.green:hover h6.card-title,
+.resource-card.green:hover .learn-more {
+  color: #28a745;
+}
+
+.resource-card.purple:hover h6.card-title,
+.resource-card.purple:hover .learn-more {
+  color: #6f42c1;
+}
+
+.resource-card.blue:hover h6.card-title,
+.resource-card.blue:hover .learn-more {
+  color: #007bff;
+}
+
+
+.book{
+background-color: #EDE9FE; 
+ padding: 20px 15px;
+  border-radius: 50%;
+  color:#7F22FE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  font-size: 20px;
+  margin-right: 15px;
+  transition: all 0.3s ease;
+}
+.gantt{
+background-color: #DBFCE7; 
+ padding: 20px 15px;
+  border-radius: 50%;
+  color:green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  font-size: 20px;
+  margin-right: 15px;
+  transition: all 0.3s ease;
+}
+.receipt{
+background-color: #F3E8FF; 
+ padding: 20px 15px;
+  border-radius: 50%;
+  color:#9810FA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  font-size: 20px;
+  margin-right: 15px;
+  transition: all 0.3s ease;
 }

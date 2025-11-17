@@ -66,14 +66,14 @@
       </div>
 
       <!-- Property Types -->
-      <div class="col-md-3">
+      <div class="col-md-2">
         <h5 class="mb-3">Property Types</h5>
         <ul class="list-unstyled mega-links">
-          <li><a href="#">Single Family Homes</a></li>
-          <li><a href="#">Apartments</a></li>
-          <li><a href="#">Condominiums</a></li>
-          <li><a href="#">Commercial</a></li>
-          <li><a href="#">Land & Lots</a></li>
+          <li><a href="#"> <i class="fa-solid fa-house"></i>Single Family Homes</a></li>
+          <li><a href="#"><i class="fa-solid fa-building"></i>Apartments</a></li>
+          <li><a href="#"><i class="fa-solid fa-store"></i>Condominiums</a></li>
+          <li><a href="#"><i class="fa-solid fa-store"></i>Commercial</a></li>
+          <li><a href="#"><i class="fa-solid fa-tree"></i>Land & Lots</a></li>
         </ul>
       </div>
 
@@ -99,24 +99,42 @@
 
 
       <!-- Resources -->
-      <div class="col-md-3">
+    <div class="col-md-3">
   <h5 class="mb-3">Resources</h5>
 
-  <div class="resource-card green mb-3">
-    <h6>Buying Guide</h6>
+  <div class="resource-card blue mb-3">
+    <div class="circle"></div>
+    <div class="d-flex  align-items-center">
+       <span><i class="fa-solid fa-book-open book"></i></span>
+    <h6 class="card-title"> Buying Guide </h6>
+    </div>
+   
     <small>Essential tips for first-time homebuyers</small>
+    <p class="learn-more">Learn More <span> →</span></p>
   </div>
 
-  <div class="resource-card purple mb-3">
-    <h6>Investment Tips</h6>
+  <div class="resource-card green mb-3">
+    <div class="circle"></div>
+    <div class="d-flex align-items-center">
+      <span><i class="fa-solid fa-chart-gantt gantt"></i></span>
+    <h6 class="card-title">Investment Tips </h6>
+    </div>
+    
     <small>Smart strategies for property investment success</small>
+    <p class="learn-more">Learn More <span> →</span></p>
   </div>
 
-  <div class="resource-card blue">
-    <h6>Market Reports</h6>
+  <div class="resource-card purple">
+    <div class="circle"></div>
+    <div class="d-flex align-items-center">
+      <span><i class="fa-solid fa-receipt receipt"></i></span>
+    <h6 class="card-title"> Market Reports </h6>
+    </div>
     <small>Latest real-estate insights</small>
+    <p class="learn-more">Learn More <span> →</span></p>
   </div>
 </div>
+
 
 
     </div>
@@ -142,21 +160,28 @@
       </div>
     </header>
     <!-- home -->
-    <section id="home">
+    <!-- <section id="home">
       <div class="section1 position-relative pt-5">
-        <div
-          class="caption text-center d-flex justify-content-center align-items-center flex-wrap w-60"
-        >
-          <h1 class="text-white mb-2">Find Your Dream Home</h1>
+       <div class="container-fluid">
+        <div class="row  ">
+
+          <div class="col-12  d-flex justify-content-center ">
+             <div class="caption text-center w-60">
+        
+          <h1 class="text-white mb-2 text-center">Find Your Dream Home</h1>
           <p class="lead text-white ms-3 me-3 mb-3 my-p">
             Discover exceptional properties in prime locations. From modern
             condos to luxury estates, we help you find the perfect place to call
             home.
           </p>
+          </div>
+        </div>
+       </div>
 
           <div class="container">
-            <div class="row gy-3 bg-white rounded-3 py-3 px-3">
-              <div class="col-lg-6">
+            <div class="row gy-3 bg-white rounded-3 py-3 px-3 search-wrapper">
+              
+                <div class="col-lg-6 col-sm-12 col-md-12 ">
                 <div class="position-relative">
                   <p class="mb-1 location">Location</p>
                   <input
@@ -169,7 +194,7 @@
                   <i class="fa-solid fa-location-dot location2"></i>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-sm-12 col-md-12">
                 <div class="w-l00">
                   <p class="mb-1 location">Location</p>
                   <select
@@ -184,7 +209,7 @@
                   </select>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-sm-12 col-md-12">
                 <div class="W-100">
                   <p class="mb-1 location">Price Range</p>
                   <select
@@ -199,7 +224,7 @@
                   </select>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-sm-6 col-md-6">
                 <div class="">
                   <p class="mb-1 location">Bedrooms</p>
                   <select
@@ -214,7 +239,7 @@
                   </select>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-sm-6 col-md-6">
                 <div class="">
                   <p class="mb-1 location">Bathrooms</p>
                   <select
@@ -229,7 +254,7 @@
                   </select>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-sm-6 col-md-6">
                 <div class="">
                   <p class="mb-1 location">Min Sq Ft</p>
 
@@ -241,7 +266,7 @@
                   />
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 col-sm-6 col-md-6">
                 <div class="">
                   <p class="mb-1 location">Max Sq Ft</p>
 
@@ -253,7 +278,7 @@
                   />
                 </div>
               </div>
-              <div class="col-lg-12">
+              <div class="col-12">
                 <div class="">
                   <button class="serach">
                     <i class="fa-solid fa-magnifying-glass"></i> Search
@@ -261,39 +286,177 @@
                   </button>
                 </div>
               </div>
+              </div>
+              
             </div>
           </div>
-          <div class="container">
-            <div class="row g-3 justify-content-center">
-              <div class="col-sm-6 fs-sm-2 col-md-6 col-lg-3">
-                <div class="">
-                  <h2 class="mb-0 text-white">15,000+</h2>
-                  <p class="num">Active Listings</p>
-                </div>
-              </div>
-              <div class="col-sm-6 fs-sm-2 col-md-6 col-lg-3">
-                <div class="div">
-                  <h2 class="mb-0 text-white">98%</h2>
-                  <p class="num">Client Satisfaction</p>
-                </div>
-              </div>
-              <div class="col-sm-6 fs-sm-2 col-md-6 col-lg-3">
-                <div class="div">
-                  <h2 class="mb-0 text-white">500+</h2>
-                  <p class="num">Expert Agents</p>
-                </div>
-              </div>
-              <div class="col-sm-6 fs-sm-2 col-md-6 col-lg-3">
-                <div class="div">
-                  <h2 class="mb-0 text-white">25</h2>
-                  <p class="num">Years Experience</p>
-                </div>
-              </div>
-            </div>
+          <div class="container mt-4">
+  <div class="row gy-4 gx-3 justify-content-center text-center">
+
+    <div class="col-sm-6 col-md-6 col-lg-3">
+      <h2 class="mb-0 text-white">15,000+</h2>
+      <p class="num">Active Listings</p>
+    </div>
+
+    <div class="col-sm-6 col-md-6 col-lg-3">
+      <h2 class="mb-0 text-white">98%</h2>
+      <p class="num">Client Satisfaction</p>
+    </div>
+
+    <div class="col-sm-6 col-md-6 col-lg-3">
+      <h2 class="mb-0 text-white">500+</h2>
+      <p class="num">Expert Agents</p>
+    </div>
+
+    <div class="col-sm-6 col-md-6 col-lg-3">
+      <h2 class="mb-0 text-white">25</h2>
+      <p class="num">Years Experience</p>
+    </div>
+
+  </div>
+</div>
+
+        </div>
+    </section> -->
+   <section id="home">
+  <div class="section1 position-relative pt-5">
+
+    <!-- Caption -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 ">
+          <div class="caption text-center   mx-auto">
+            <h1 class="text-white mb-2 text-center">Find Your Dream Home</h1>
+            
+           <div class="col-12 col-lg-8 text-center mx-auto  ">
+             <p class="lead text-white ms-3 me-3 mb-3 my-p lh-2  ">
+              Discover exceptional properties in prime locations. From modern
+              condos to luxury estates, we help you find the perfect place to call home
+            </p>
+           </div>
+            
           </div>
         </div>
       </div>
-    </section>
+    </div>
+
+    <!-- Search Form -->
+  <div class="container">
+  <div class="row gy-3 gx-3 bg-white rounded-3 py-3 px-3 search-wrapper w-75 mx-auto">
+
+    <!-- Location -->
+    <div class="col-sm-12 col-md-12 col-lg-6">
+      <div class="position-relative">
+        <p class="mb-1 location">Location</p>
+        <input type="text" class="w-100 pt-3 pb-3 pe-4 ps-4 location1 rounded-2"
+          placeholder="Enter city, neighborhood, or ZIP code" />
+        <i class="fa-solid fa-location-dot location2"></i>
+      </div>
+    </div>
+
+    <!-- Type -->
+    <div class="col-sm-12 col-md-12 col-lg-3">
+      <p class="mb-1 location">Type</p>
+      <select class="form-select w-100 pt-3 pb-3 pe-4 ps-4">
+        <option selected>All types</option>
+        <option>House</option>
+        <option>Apartment</option>
+        <option>Condo</option>
+        <option>Townhouse</option>
+      </select>
+    </div>
+
+    <!-- Price Range -->
+    <div class="col-sm-12 col-md-12 col-lg-3">
+      <p class="mb-1 location">Price Range</p>
+      <select class="form-select w-100 pt-3 pb-3 pe-4 ps-4">
+        <option selected>Any Price</option>
+        <option>$0-$500k</option>
+        <option>$500k - $1M</option>
+        <option>$1M - $2M</option>
+      </select>
+    </div>
+
+    <!-- Bedrooms -->
+    <!-- Bedrooms -->
+<div class="col-6 col-sm-6 col-md-6 col-lg-3">
+  <p class="mb-1 location">Bedrooms</p>
+  <select class="form-select w-100 pt-3 pb-3 pe-4 ps-4">
+    <option selected>Any</option>
+    <option>1+</option>
+    <option>2+</option>
+    <option>3+</option>
+    <option>4+</option>
+  </select>
+</div>
+
+<!-- Bathrooms -->
+<div class="col-6 col-sm-6 col-md-6 col-lg-3">
+  <p class="mb-1 location">Bathrooms</p>
+  <select class="form-select w-100 pt-3 pb-3 pe-4 ps-4">
+    <option selected>Any</option>
+    <option>1+</option>
+    <option>2+</option>
+    <option>3+</option>
+    <option>4+</option>
+  </select>
+</div>
+
+<!-- Min Sq Ft -->
+<div class="col-6 col-sm-6 col-md-6 col-lg-3">
+  <p class="mb-1 location">Min Sq Ft</p>
+  <input type="number" class="form-control w-100 pt-3 pb-3 pe-4 ps-4" placeholder="1,000" />
+</div>
+
+<!-- Max Sq Ft -->
+<div class="col-6 col-sm-6 col-md-6 col-lg-3">
+  <p class="mb-1 location">Max Sq Ft</p>
+  <input type="number" class="form-control w-100 pt-3 pb-3 pe-4 ps-4" placeholder="5,000" />
+</div>
+
+    <!-- Search Button -->
+    <div class="col-12">
+      <button class="serach w-100">
+        <i class="fa-solid fa-magnifying-glass"></i> Search Properties
+      </button>
+    </div>
+
+  </div>
+</div>
+
+
+
+    <!-- Stats Section -->
+    <div class="container mt-4">
+      <div class="row gy-3 gx-3 justify-content-center text-center">
+
+        <div class=" col-6 col-sm-6 col-md-6 col-lg-3">
+          <h2 class="mb-0 text-white">15,000+</h2>
+          <p class="num">Active Listings</p>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <h2 class="mb-0 text-white">98%</h2>
+          <p class="num">Client Satisfaction</p>
+        </div>
+
+        <div class=" col-6 col-sm-6 col-md-6 col-lg-3">
+          <h2 class="mb-0 text-white">500+</h2>
+          <p class="num">Expert Agents</p>
+        </div>
+
+        <div class=" col-6 col-sm-6 col-md-6 col-lg-3">
+          <h2 class="mb-0 text-white">25</h2>
+          <p class="num">Years Experience</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
     <!-- propreties -->
     <section id="properties" class="bg-gray">
       <div class="container mx-auto py-5">
